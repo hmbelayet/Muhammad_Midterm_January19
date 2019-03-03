@@ -15,6 +15,18 @@ public class LowestNumber {
 		int  array[] = new int[]{211,110,99,34,67,89,67,456,321,456,78,90,45,32,56,78,90,54,32,123,67,5,679,54,32,65};
 
 		//find lowest number from the array
+		int num = array[0];
+
+		for(int i=1; i<array.length; i++) {
+
+			if(array[i]<num) {
+
+				num=array[i];
+			}
+
+		}
+		System.out.println("Lowest Numebr From Given Array:- "+num);
+
 
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		List<String> lowestValue = new ArrayList<String>();
@@ -29,6 +41,8 @@ public class LowestNumber {
 		for(String st:lowestValue){
 			System.out.println(st);
 		}
+	}
+	public static class ConnectDB extends ConnectToSqlDB {
 	}
 
 }
