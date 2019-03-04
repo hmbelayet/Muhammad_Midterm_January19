@@ -19,6 +19,7 @@ public class UseMap {
 		HospitalList.add("Therapist");
 
 		List<String> UniversityList = new ArrayList<String>();
+		UniversityList.add("Student");
 		UniversityList.add("Vice Chancellor");
 		UniversityList.add("Professor");
 		UniversityList.add("Associate Professor");

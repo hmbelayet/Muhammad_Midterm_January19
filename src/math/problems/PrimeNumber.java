@@ -27,9 +27,6 @@ public class PrimeNumber {
 				{break;}
 			}
 		}
-		//db connection begin
-
-		// db connection ends
 	}
 
 }
